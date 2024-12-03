@@ -1,11 +1,8 @@
 import {Link} from 'react-router-dom'
-
 import Header from '../Header'
-
 import './index.css'
-
 const Home = () => (
-  <div className="main-home-container">
+  <>
     <Header />
     <div className="home-container">
       <div className="home-content">
@@ -15,13 +12,12 @@ const Home = () => (
           reviews. Find the job that fits your abilities and potential.
         </p>
         <Link to="/jobs">
-          <button type="button" className="home-button">
+          <button type="button" className="shop-now-button">
             Find Jobs
           </button>
         </Link>
       </div>
     </div>
-  </div>
+  </>
 )
-
 export default Home
